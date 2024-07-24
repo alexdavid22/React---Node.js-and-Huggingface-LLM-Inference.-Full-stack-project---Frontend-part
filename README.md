@@ -30,7 +30,7 @@ No dependencies need to be installed, as the project is complete and ready for u
 - **Initial Hugging Face Model:** [Llama 3 8B Instruct BNB 4Bit Veziv Test](https://huggingface.co/AlSaRobotics/llama-3-8b-Instruct-bnb-4bit-veziv-test)
 - **Current Model:** Mistral (context fine-tuned for inference API)
 - **Dataset:** [Finetuning Demo](https://huggingface.co/datasets/AlSaRobotics/finetuning_demo)
-- **Google Drive:** [Training Video](https://drive.google.com/file/d/1CEx_TnzAlTMEGqqq5O2QXKoz8fPOUjW8/view?usp=sharing) (Jupyter Notebook code for initial training through 10 epochs)
+- **Google Drive:** [Training Video](https://drive.google.com/file/d/1sFaGpW1ta0mvwkYnUWeZanT8ZNkgd7vR/view?usp=drive_link) (Jupyter Notebook code for initial training through 10 epochs)
 
 ## Project Structure
 
