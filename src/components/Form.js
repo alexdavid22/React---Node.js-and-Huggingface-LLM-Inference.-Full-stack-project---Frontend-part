@@ -10,13 +10,16 @@ function Form() {
     e.preventDefault()
     setLoading(true)
     try {
-      const response = await fetch("http://localhost:3001/api/generate-offer", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ request }),
-      })
+      const response = await fetch(
+        "https://node-js-veziv-backend.onrender.com/api/generate-offer",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ request }),
+        }
+      )
       if (!response.ok) {
         throw new Error("Network response was not ok")
       }
@@ -43,7 +46,7 @@ function Form() {
         </button>
       </form>
       <div className="response-style">
-        {!response && loading ? (
+        {loading ? (
           <h2>The AI is generating the reponse... Please wait.</h2>
         ) : (
           <pre>{response}</pre>
