@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Full Stack AI Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a full stack application that interacts with an AI model to generate responses based on predefined templates as specified by the company requirements. The project is fully operational and can be tested online.
 
-## Available Scripts
+## Live Demo
 
-In the project directory, you can run:
+The project is available online and can be tested at the following link:
+[Live Demo](https://lambent-stardust-6805e1.netlify.app/)
 
-### `npm start`
+To use the application, simply visit the link, enter your request in the form, and click send. The AI will respond according to the predefined template.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- The application is in English, and the AI model responds in English due to limitations in the open-source models, which are not as powerful in languages other than English.
+- The AI's responses are always formatted according to the specified template from the company examples.
 
-### `npm test`
+## How to Run the Project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+No dependencies need to be installed, as the project is complete and ready for use. Simply visit the live demo link provided above.
 
-### `npm run build`
+## AI Model Training Steps
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Training Details
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- The AI model was initially trained using Llama3. During training, it was observed that the model cannot communicate effectively in Romanian.
+- For the web application, a new model, Mistral, was used. This model was context fine-tuned, meaning it was provided memory context to know how to formulate the answer.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Resources
 
-### `npm run eject`
+- **Initial Hugging Face Model:** [Llama 3 8B Instruct BNB 4Bit Veziv Test](https://huggingface.co/AlSaRobotics/llama-3-8b-Instruct-bnb-4bit-veziv-test)
+- **Current Model:** Mistral (context fine-tuned for inference API)
+- **Dataset:** [Finetuning Demo](https://huggingface.co/datasets/AlSaRobotics/finetuning_demo)
+- **Google Drive:** [Training Video](https://drive.google.com/file/d/1CEx_TnzAlTMEGqqq5O2QXKoz8fPOUjW8/view?usp=sharing) (Jupyter Notebook code for initial training through 10 epochs)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Front-end:** Developed with modern JavaScript frameworks for responsive and dynamic user interaction.
+- **Back-end:** Node.js used for server-side operations, API management, and database interactions.
+- **AI Model:** Integrated with the application to process user inputs and generate appropriate responses based on the training data and predefined templates.
