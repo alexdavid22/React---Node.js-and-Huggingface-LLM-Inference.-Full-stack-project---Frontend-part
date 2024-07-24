@@ -35,5 +35,5 @@ No dependencies need to be installed, as the project is complete and ready for u
 ## Project Structure
 
 - **Front-end:** Developed with the modern JavaScript framework React.js for responsive and dynamic user interaction.
-- **Back-end:** Node.js used for server-side operations, API management, and database interactions.
+- **Back-end:** Node.js used for server-side operations and API management.
 - **AI Model:** Integrated with the application to process user inputs and generate appropriate responses based on the training data and predefined templates.
